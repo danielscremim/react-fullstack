@@ -12,7 +12,8 @@ const Opcao = styled.li`
     cursor: pointer;
     min-width: 120px;
 `
-const Opcoes =styled.ul`
+
+const Opcoes = styled.ul`
     display: flex;
 `
 
@@ -22,9 +23,9 @@ function OpcoesHeader() {
     return (
         <Opcoes>
             { textoOpcoes.map( (texto) => (
-                <Link to={`/${texto.toLowerCase()}`}><Opcao><p>{texto}</p></Opcao></Link>
-          ) ) }
-        </Opcoes>
+                <Link to={`/${texto.toLowerCase()}`} ><Opcao><p>{texto}</p></Opcao></Link>
+            ) ) }
+      </Opcoes>
     )
 }
 

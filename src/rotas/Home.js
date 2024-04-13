@@ -11,12 +11,12 @@ const AppContainer = styled.div`
 `
 
 function Home() {
- return (
-   <AppContainer>
-     <Pesquisa />
-     <UltimosLancamentos />
-   </AppContainer>
- );
+  return (
+    <AppContainer>
+      <Pesquisa />
+      <UltimosLancamentos />
+    </AppContainer>
+  );
 }
 
 export default Home
