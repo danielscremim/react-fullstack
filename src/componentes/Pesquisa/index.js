@@ -49,7 +49,7 @@ const Resultado = styled.div`
 
 function Pesquisa() {
     const [livrosPesquisados, setLivrosPesquisados] = useState([])
-    const [ livros, setLivros ] = useState([])
+    const [livros, setLivros] = useState([])
 
     useEffect(() => {
         fetchLivros()
@@ -60,9 +60,9 @@ function Pesquisa() {
         setLivros(livrosDaAPI)
     }
 
-    async function insertFavorito(id) {
+    async function insereFavorito(id) {
         await postFavorito(id)
-        alert(`Livro de id:{id}$Adicionado aos favoritos`)
+        alert(`O livro de id: ${id} foi inserido com sucesso`)
     }
 
     return (
@@ -78,7 +78,7 @@ function Pesquisa() {
                 }}
             />
             { livrosPesquisados.map( livro => (
-                <Resultado onClick={() => insertFavorito(livro.id)}>
+                <Resultado onClick={() => insereFavorito(livro.id)}>
                     <img src={livro.src}/>
                     <p>{livro.nome}</p>
                 </Resultado>

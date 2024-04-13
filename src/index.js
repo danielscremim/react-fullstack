@@ -32,10 +32,10 @@ root.render(
   <React.StrictMode>
     <GlobalStyle />
     <BrowserRouter>
-    <Header />
+      <Header />
       <Routes>
         <Route path="favoritos" element={<Favoritos/>} />
-        <Route path="/" element={<Home />} ></Route>
+        <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
