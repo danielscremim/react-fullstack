@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const HeaderContainer = styled.header`
-    background-color: #FFF;
+    linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent);
     display: flex;
     justify-content: center;
 `

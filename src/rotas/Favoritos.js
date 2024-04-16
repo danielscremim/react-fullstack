@@ -7,12 +7,13 @@ import livroImg from '../imagens/livro.png'
 const AppContainer = styled.div`
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(90deg,#00222 35%,#326589 165%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.4542191876750701) 35%, rgba(0,212,255,1) 100%);
 `
 
 const ResultadoContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
+    border: solid #000 1px;
     justify-content: center;
 `
 
@@ -26,7 +27,7 @@ const Resultado = styled.div`
     padding: 0 100px;
     p {
         width: 200px;
-        color: #FFF;
+        color: #000;
     }
     img {
         width: 100px;
@@ -37,7 +38,7 @@ const Resultado = styled.div`
 `
 
 const Titulo = styled.h2`
-    color: #FFF;
+    color: #000;
     font-size: 36px;
     text-align: center;
     width: 100%;

@@ -23,6 +23,7 @@ const Titulo = styled.h2`
 
 const Subtitulo = styled.h3`
     font-size: 16px;
+    color: #FFF;
     font-weight: 500;
     margin-bottom: 40px;
 `
